@@ -43,3 +43,11 @@ int main() {
                 cout << "No se pueden registrar mas productos.\n";
             }
             break;
+        case 2: {
+            float total = 0;
+            for(int i = 0; i < n; i++) {
+                total += productos[i].precio * productos[i].cantidad;
+            }
+            cout << "Total de la compra: $" << total << endl;
+            break;
+        }
