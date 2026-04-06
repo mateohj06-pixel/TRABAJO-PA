@@ -62,3 +62,15 @@ int main() {
             cout << "Total de la compra: $" << total << endl;
             break;
         }
+case 4:
+            cout << "Saliendo del programa...\n";
+            break;
+
+        default:
+            cout << "Opcion no valida.\n";
+        }
+
+    } while(opcion != 4);
+
+    return 0;
+}
