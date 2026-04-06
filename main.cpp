@@ -48,6 +48,17 @@ int main() {
             for(int i = 0; i < n; i++) {
                 total += productos[i].precio * productos[i].cantidad;
             }
+            case 3:
+            cout << "\n--- Productos registrados ---\n";
+            for(int i = 0; i < n; i++) {
+                cout << "Producto " << i+1 << endl;
+                cout << "Nombre: " << productos[i].nombre << endl;
+                cout << "Precio: " << productos[i].precio << endl;
+                cout << "Cantidad: " << productos[i].cantidad << endl;
+                cout << "Subtotal: " << productos[i].precio * productos[i].cantidad << endl;
+                cout << "----------------------\n";
+            }
+            break;
             cout << "Total de la compra: $" << total << endl;
             break;
         }
